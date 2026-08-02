@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="13a5e7fb341203107f4499b29fa8f96a" label="Wish Item" max_length="40" name="x_snc_wishlist_wish_item" type="collection">
         <element label="Requester" mandatory="true" max_length="32" name="requester" reference="sys_user" type="reference"/>
-        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element label="Quantity" max_length="40" name="quantity" type="integer"/>
-        <element label="Display Name" max_length="40" name="display_name" read_only="true" type="string"/>
+        <element label="Display name" max_length="40" name="display_name" read_only="true" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element label="Item" mandatory="true" max_length="125" name="item" type="string"/>
         <index name="index">
             <element name="requester"/>
